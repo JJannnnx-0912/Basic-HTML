@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url("19742.jpg");
+            object-fit:fill;
+            font-family: "sarabun",sans-serif;
+            color: black;
+        }
+        .box {
+            background-color: lightgray;
+            background-repeat: repeat;
+            width: 500px;
+            height: 700px;
+            margin: auto;
+            border: 1px dotted;
+            box-shadow: 10px 10px 2px gray
+        }
+        .h1 {
+             color: black;
+        }
+        .h1::after {
+            content:"📝";
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <h1 class="h1" style="padding-left:130px;">Register Form</h1><form>
+        <fieldset class="pi">
+            <legend><b>ข้อมูลส่วนตัว</b></legend>
+            <label for="pname">ชื่อ</label><br>
+            <input type="text"placeholder=กรุณาระบุเป็นภาษาไทย><br>
+            <label for="lname">นามสกุล</label><br>
+            <input type="text"placeholder=กรุณาระบุเป็นภาษาไทย><br>
+            <label for="birthday">วัน/เดือน/ปีเกิด</label><br>
+            <input type="date"><br>
+            <label for="age" class="mook" >อายุ</label>
+            <input type="text"placeholder=กรุณาระบุเป็นตัวเลข style="width: 110px;"> ปี<br>
+            <label for="gender">เพศ</label>
+            <select name="เพศ">
+                <option value="none">กรุณาเลือก</option>
+                <option value="male">ชาย</option>
+                <option value="female">หญิง</option>
+                <option value="n/a">ไม่ระบุ</option>
+            </select>
+        </fieldset>
+        <fieldset class="it">
+            <legend><b>ความสนใจ</b></legend>
+            <input type="checkbox"> <label for="excercise">ออกกำลังกาย</label><br>
+            <input type="checkbox"> <label for="music">ดนตรี</label><br>
+            <input type="checkbox"> <label for="travel">ท่องเที่ยว</label><br>
+            <input type="checkbox"> <label for="coding">เขียนโค้ด</label><br>
+            <input type="checkbox"> <label for="reading">อ่านหนังสือ</label><br>
+            <input type="checkbox"> <label for="etc">อื่นๆ <input type="text"placeholder=โปรดระบุ></label>
+        </fieldset>
+        <fieldset class="dt">
+            <legend><b>คำอธิบายเพิ่มเติม</b></legend>
+            <textarea name="detail" rows="5"></textarea>
+        </fieldset><br>
+        <button type="submit">ส่งได้เลยจ้า</button> 
+    </form> 
+    </div>
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.image-gallery {
+  display: flex; /* จัดเรียงรูปภาพในแนวนอน */
+  gap: 20px; /* ระยะห่างระหว่างรูปภาพ */
+  justify-content: center; /* จัดให้อยู่กึ่งกลาง */
+  padding: 50px;
+  background-color: #f0f0f0;
+}
+
+.image-item {
+  overflow: hidden; /* ซ่อนส่วนเกิน */
+  border-radius: 8px; /* ขอบโค้งมน */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงา */
+  transition: all 0.3s ease-in-out; /* กำหนด transition สำหรับการเปลี่ยนแปลงทั้งหมด */
+}
+
+.image-item img {
+  display: block; /* ลบช่องว่างด้านล่างรูปภาพ */
+  width: 150px; /* กำหนดความกว้างของรูปภาพ */
+  height: 150px; /* กำหนดความสูงของรูปภาพ */
+  object-fit: cover; /* ครอบคลุมพื้นที่โดยไม่บิดเบือน */
+  transition: transform 0.3s ease-in-out; /* กำหนด transition สำหรับ transform โดยเฉพาะ */
+}
+
+/* ใช้ nth-child เพื่อกำหนดการเลื่อนที่แตกต่างกัน */
+.image-gallery .image-item:hover:nth-child(odd) img {
+  transform: translateY(-10px); /* รูปภาพเลขคี่เลื่อนขึ้น */
+}
+
+.image-gallery .image-item:hover:nth-child(even) img {
+  transform: translateY(10px); /* รูปภาพเลขคู่เลื่อนลง */
+}
+
+/* ตัวอย่างเพิ่มเติม: กำหนดการเลื่อนเฉพาะสำหรับรูปภาพบางรูป */
+.image-gallery .image-item:hover:nth-child(3) img {
+  transform: translateX(15px); /* รูปภาพที่ 3 เลื่อนไปทางขวา */
+}
+
+.image-gallery .image-item:hover:nth-child(5) img {
+  transform: rotate(5deg) scale(1.05); /* รูปภาพที่ 5 หมุนและขยายเล็กน้อย */
+}
+    </style>
+</head>
+<body>
+    <div class="image-gallery">
+  <div class="image-item">
+    <img src="https://via.placeholder.com/150/FF5733/FFFFFF?text=Image+1" alt="Image 1">
+  </div>
+  <div class="image-item">
+    <img src="https://via.placeholder.com/150/33FF57/FFFFFF?text=Image+2" alt="Image 2">
+  </div>
+  <div class="image-item">
+    <img src="https://via.placeholder.com/150/5733FF/FFFFFF?text=Image+3" alt="Image 3">
+  </div>
+  <div class="image-item">
+    <img src="https://via.placeholder.com/150/FF33CC/FFFFFF?text=Image+4" alt="Image 4">
+  </div>
+  <div class="image-item">
+    <img src="https://via.placeholder.com/150/33CCFF/FFFFFF?text=Image+5" alt="Image 5">
+  </div>
+</div>
+</body>
+</html>

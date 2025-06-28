@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title::after {
+            content:"😄";
+        }
+        .title:hover {
+            background-color: yellowgreen;
+            color: red;
+            cursor: default;
+        }
+        .button:hover {
+            background-color: pink;
+            box-shadow: 10px 10px 2px gray;
+        }
+        .button:focus {
+            background-color: orchid;
+            box-shadow: 10px 10px 2px gray;
+        }
+        .li::marker{
+            color: red;
+        }
+        .li:nth-child(odd) {
+            color: green;
+        }
+        .li:nth-child(even) {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">กดปุ่มเลย</h1> 
+    <button class="button" style="width: 60px; height: 30px;">คลิกที่นี่</button>
+    <ul class="ul">
+        <li class="li">1</li>
+        <li class="li">2</li>
+        <li class="li">3</li>
+        <li class="li">4</li>
+        <li class="li">5</li>
+        <li class="li">6</li>
+    </ul>
+</body>
+</html>

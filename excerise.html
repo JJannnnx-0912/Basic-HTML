@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pi{
+            background-color: rgb(255, 217, 223);
+        }
+        .it{
+            background-color: rgb(252, 252, 170);
+        }
+        .dt{
+            background-color: rgb(195, 237, 255);
+        }
+    </style>
+</head>
+<body>
+    <h1>Register Form</h1>
+    <p>ลงทะเบียนอบรม Front-end Developer รุ่นที่ 1 ปี 2568</p>
+    <form action="">
+        <fieldset class="pi">
+            <legend><b>ข้อมูลส่วนตัว</b></legend>
+            <label for="pname">ชื่อ</label><br>
+            <input type="text"placeholder=กรุณาระบุเป็นภาษาไทย><br>
+            <label for="lname">นามสกุล</label><br>
+            <input type="text"placeholder=กรุณาระบุเป็นภาษาไทย><br>
+            <label for="birthday">วัน/เดือน/ปีเกิด</label><br>
+            <input type="date"><br>
+            <label for="age" class="mook" >อายุ</label>
+            <input type="text"placeholder=กรุณาระบุเป็นตัวเลข style="width: 110px;"> ปี<br>
+            <label for="gender">เพศ</label>
+            <select name="เพศ">
+                <option value="none">กรุณาเลือก</option>
+                <option value="male">ชาย</option>
+                <option value="female">หญิง</option>
+                <option value="n/a">ไม่ระบุ</option>
+            </select>
+        </fieldset>
+        <fieldset class="it">
+            <legend><b>ความสนใจ</b></legend>
+            <input type="checkbox"> <label for="excercise">ออกกำลังกาย</label><br>
+            <input type="checkbox"> <label for="music">ดนตรี</label><br>
+            <input type="checkbox"> <label for="travel">ท่องเที่ยว</label><br>
+            <input type="checkbox"> <label for="coding">เขียนโค้ด</label><br>
+            <input type="checkbox"> <label for="reading">อ่านหนังสือ</label><br>
+            <input type="checkbox"> <label for="etc">อื่นๆ <input type="text"placeholder=โปรดระบุ></label>
+        </fieldset>
+        <fieldset class="dt">
+            <legend><b>คำอธิบายเพิ่มเติม</b></legend>
+            <textarea name="detail" rows="5"></textarea>
+        </fieldset><br>
+        <button type="submit">ส่งได้เลยจ้า</button> 
+    </form>
+</body>
+</html>
